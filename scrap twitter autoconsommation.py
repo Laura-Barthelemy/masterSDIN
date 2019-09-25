@@ -30,10 +30,10 @@ def getItem(items,field):
 
 #Les informations ci-dessous sont les clés nécessaire à la collecte de données
 
-consumer_key='uxuXCDKJeaQHzWOrYUE9BcDbX'
-consumer_secret='SIEFExWOICNFRGlTOMdh7TTVMPRZPu8gNY1zjr5MRGlUu8myGK'
-access_token='3190026442-t6Q03rbmjty23Iawj0JmfxsiAwuSYTKjYBavwXO'
-access_token_secret='MQr1NoKhuHBhQccKelrnfNJTtjbKjQXvCTa76UN550clx'
+consumer_key=''
+consumer_secret=''
+access_token=''
+access_token_secret=''
 
 
 auth = tweepy.auth.OAuthHandler(consumer_key, consumer_secret) 
