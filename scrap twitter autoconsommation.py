@@ -29,10 +29,10 @@ def getItem(items,field):
 
 #Les informations ci-dessous sont les clés nécessaire à la collecte de données
 
-consumer_key=''
-consumer_secret=''
-access_token=''
-access_token_secret=''
+consumer_key='PUT CONSUMER KEY HERE'
+consumer_secret='PUT CONSUMER SECRET HERE'
+access_token='PUT ACCESS TOKEN HERE'
+access_token_secret='PUT ACCESS TOKEN SECRET HERE'
 
 
 auth = tweepy.auth.OAuthHandler(consumer_key, consumer_secret) 
