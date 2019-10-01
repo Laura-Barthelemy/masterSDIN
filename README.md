@@ -1,63 +1,56 @@
-# PIP-SCRAP
+# masterSDIN
 
 ## Installation
 
-- Installer chromedriver : https://chromedriver.chromium.org/ puis déplacer le fichier dézipper à la racine du projet.
+- Installer les différents modules utilisés dans les programmes (notamment tweepy et wordcloud)
 
-- `pip install -r requirements.txt` ou `pip3 install -r requirements.txt`
+- `pip install [nom du module]
 
-## Définition des scrappers
+## Définition des programmes
 
-### Scrapper 1
+### Jeu du pendu (VF)
 
-Récupère tous les liens du site [https://www.opinionsystem.fr](https://www.opinionsystem.fr) (*Opinion System est le N°1 des avis clients contrôlés pour les professionnels du service et de l'immobilier*) et extrait les informations suivantes :
+Ceci est un jeu du pendu, il y a 6 lettres et 6 chances. Le programme affiche un " _ _ _ _ _ _" et demande "choisit une lettre".
+Nous répondons une lettre x Si cette lettre est dans le mot, il affiche la lettre à la place correspondante et affiche "choisit une nouvelle lettre". Si x n'est pas dans le mot, le programme affiche "perdu, encore n chances. 
 
-* adresse ;
-* ville ;
-* pays ;
-* numéro de téléphone ;
-* entreprise ;
-* email ;
+Si le bon mot est trouvé avant la fin, le programme affiche "tu as gagné". Autrement, il affichera "GAME OVER".
 
-Démarrer le script `getLinks.py` pour récupérer les liens.
-Ensuite, démarrer le script `scrapper.py` pour extraire les informations.
+Démarrer le script `PenduVF.py` pour lancer le jeu.
 
-### Scrapper 2
 
-Extrait les informations du site [https://www.magazine-decideurs.com](https://www.magazine-decideurs.com/classements/propriete-industrielle-brevets-contentieux-classement-2019-cabinet-d-avocats-france?locale=fr) (*Classement des cabinets d'avocats*) :
+### Récolte de données Twitter - Autoconsommation
 
-* numéro de téléphone ;
-* cabinet ;
-* nom ;
-* métiers ;
-* emails des avocats ;
-* emails des cabinets ;
+Extrait différents tweets avec les termes "autoconsommation" et le hashtag "#autoconsommation". L'objectif est de collecter un ensemble de données et de réaliser une étude sur les différents résultats obtenus pour ces termes. Le programme va collecter les informations suivantes pour chaque tweet identifié :
 
-Démarrer le script `scrapper.py` pour extraire les informations.
+* L'ID du Tweet ;
+* Le texte du Tweet ;
+* Le nombre de Retweet du Tweet ;
+* Le nombre de likes du Tweet ;
+* La date du Tweet ;
+* Les hashtags utilisés dans le Tweet ;
+* Les mentions du Tweet ;
+* Les coordonnées du Tweet ;
+* Le screenname de l'auteur du Tweet ;
+* Le nom de l'auteur du Tweet ;
+* L'ID de l'auteur du Tweet ;
+* La langue de l'auteur du Tweet ;
+* La localisation de l'auteur du Tweet ;
+* Le nombre de followers de l'auteur du Tweet ;
+* Le nombre d'abonnements de l'auteur du Tweet ;
 
-### Scrapper 3
 
-Extrait les informations du site [http://www.avocatparis.org/](http://www.avocatsparis.org/Eannuaire/CMSRecherche2.aspx?wmode=transparent) (*Liste des cabinets d'avocats*) :
+Démarrer le script `scrap twitter autoconsommation.py` pour extraire les informations.
 
-* numéro de téléphone ;
-* nom ;
-* emails ;
-* fax ;
-* adresses ;
-* activités ;
+### Nuage de mots
 
-Démarrer le script `scrapper.py` pour extraire les informations.
+Permet de réaliser un nuage de mot avec les tweets collectées à l'aide du programme précédent.
+Pour lancer ce programme, les éléments suivants sont nécessaires
 
-### Scrapper 4
+* Télécharger le module nltk ;
+* Télécharger le module wordcloud ;
+* Télécharger une image en format png avec la forme souhaitée pour le nuage de mot ;
+* Définir la langue des STOPWORDS (en fonction des données utilisées pour le nuage de mot) ;
+* Définir la colonne correspondante du fichier csv. ;
 
-Extrait les informations du site [https://www.barreau-marseille.avocat.fr/](https://www.barreau-marseille.avocat.fr/fr/annuaire/page-1?&full=&nom=&specialites=&recherche_annuaire-submit=Ok) (*Liste des cabinets d'avocats*) :
-
-* Nom ;
-* Email ;
-* Adresse ;
-* Numéro ;
-* Fax ;
-* Activité ;
-
-Démarrer le script `scrapper.py` pour extraire les informations.
+Démarrer le script `Word_cloud.py` pour réaliser le nuage de mots.
 
