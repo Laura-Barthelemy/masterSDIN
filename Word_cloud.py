@@ -1,6 +1,5 @@
 #utf-8
-#Ce programme permet de créer un nuage avec les mots les plus utilisés dans nos
-#tweets scrappés.
+#Ce programme permet de créer un nuage avec les mots les plus utilisés dans notre fichier csv
 
 from wordcloud import WordCloud
 import numpy as np
