@@ -1,5 +1,5 @@
 #coding : utf-8
-#Ce programme va scrapper les tweets populaires avec les mentions autoconsommation et #autoconsommation
+#Ce programme va scrapper les tweets avec les mentions autoconsommation et #autoconsommation
 #Scrapping du contenu, de l'ID du tweet, de l'ID de la personne, la géolocal
 # de la personne qui a posté le tweet, le nombre de followers de la personne,
 #nombre de likes et nombre de RT du post, @cités et #.
