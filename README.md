@@ -43,7 +43,7 @@ Démarrer le script `scrap twitter autoconsommation.py` pour extraire les inform
 
 ### Nuage de mots
 
-Permet de réaliser un nuage de mot avec les tweets collectées à l'aide du programme précédent.
+Permet de réaliser un nuage de mot avec les tweets collectées à l'aide du script `scrap twitter autoconsommation.py`.
 Pour lancer ce programme, les éléments suivants sont nécessaires
 
 * Télécharger le module nltk ;
